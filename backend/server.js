@@ -13,7 +13,8 @@ app.use(cors({
   origin: [
     'http://localhost:3000',
     'http://localhost:5173',
-    process.env.FRONTEND_URL,        // set this on Render after Vercel deploy
+    'https://employee-performance-and-ai-recomen.vercel.app',
+    process.env.FRONTEND_URL,
   ].filter(Boolean),
   credentials: true,
 }));
